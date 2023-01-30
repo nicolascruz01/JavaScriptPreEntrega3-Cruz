@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ingreso de reservas</title>
+  </head>
+  <body>
+    <h1>Formulario de ingreso de reservaciones de hotel</h1>
+    <form id="formulario-reservacion">
+      <div>
+        <label for="nombre">Nombre de huésped:</label>
+        <input type="text" id="nombre" name="nombre">
+      </div>
+      <div>
+        <label for="fecha-entrada">Fecha de entrada:</label>
+        <input type="date" id="fecha-entrada" name="fecha-entrada">
+      </div>
+      <div>
+        <label for="fecha-salida">Fecha de salida:</label>
+        <input type="date" id="fecha-salida" name="fecha-salida">
+      </div>
+      <div>
+        <label for="numero-personas">Número de personas:</label>
+        <input type="number" id="numero-personas" name="numero-personas">
+      </div>
+      <div>
+        <label for="numero-noches">Número de noches:</label>
+        <input type="number" id="numero-noches" name="numero-noches">
+      </div>
+      <div>
+        <label for="precio-por-noche">Precio por noche:</label>
+        <input type="number" id="precio-por-noche" name="precio-por-noche">
+      </div>
+      <div>
+        <label for="precio-total">Precio total:</label>
+        <input type="number" id="precio-total" name="precio-total">
+      </div>
+      <button type="submit">Agregar al carrito</button>
+    </form>
+    <table id="tabla-reservaciones">
+      <thead>
+        <tr>
+          <th>Nombre de huésped</th>
+          <th>Fecha de entrada</th>
+          <th>Fecha de salida</th>
+          <th>Número de personas</th>
+          <th>Número de noches</th>
+          <th>Precio por noche</th>
+          <th>Precio total</th>
+        </tr>
+      </thead>
+      <tbody id="cuerpo-tabla-reservaciones">
+      </tbody>
+    </table>
+    <script src="./app.js"></script>
+  </body>
+</html>
